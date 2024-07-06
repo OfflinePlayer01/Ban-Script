@@ -1,0 +1,2 @@
+# Ban-Script
+[ ALERT ] DO NOT USE ON YOUR OWN ACCOUNT
