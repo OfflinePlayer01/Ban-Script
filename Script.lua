@@ -13,7 +13,7 @@ textBox.TextStrokeTransparency = 0
 textBox.TextStrokeColor3 = Color3.new(0, 0, 0)
 textBox.ClearTextOnFocus = false
 textBox.TextEditable = false
-textBox.Text = "〰 Script Executed 〰"
+textBox.Text = "〰 Swearing Will Start After 7 Seconds 〰"
 textBox.Parent = screenGui
 
 local timer = 5
@@ -21,7 +21,7 @@ local timerActive = true
 
 local function startTimer()
     timerActive = true
-    textBox.Text = "〰 You Will Be Banned in 7 Seconds 〰"
+    textBox.Text = "〰 Swearing Will Start After 7 Seconds 〰"
     wait(timer)
     timerActive = false
     textBox.Text = ""
@@ -95,3 +95,112 @@ local A_1 = "BKZ"
 local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+local textBox = Instance.new("TextBox")
+textBox.Size = UDim2.new(1, 1, 1, 1)
+textBox.Position = UDim2.new(0, 0, 0, 0)
+textBox.BackgroundColor3 = Color3.new(1, 1, 1)
+textBox.BorderSizePixel = 0
+textBox.BackgroundTransparency = 0.8
+textBox.FontSize = Enum.FontSize.Size14
+textBox.TextColor3 = Color3.new(1, 1, 1)
+textBox.TextStrokeTransparency = 0
+textBox.TextStrokeColor3 = Color3.new(0, 0, 0)
+textBox.ClearTextOnFocus = false
+textBox.TextEditable = false
+textBox.Text = "〰 Spam will start in 10 seconds 〰"
+textBox.Parent = screenGui
+
+local timer = 10
+local timerActive = true
+
+local function startTimer()
+    timerActive = true
+    textBox.Text = "〰 Spam will start in 10 seconds 〰"
+    wait(timer)
+    timerActive = false
+    textBox.Text = ""
+    textBox:Destroy()
+end
+
+startTimer()
+
+local function onFocusLost(enterPressed, inputObject)
+    if enterPressed and timerActive then
+        print(textBox.Text)
+        startTimer()
+    end
+end
+textBox.FocusLost:Connect(onFocusLost)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local A_1 = "REPORT ME FOR SPAM"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+print("Banned Account")
+
+end
